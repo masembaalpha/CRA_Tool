@@ -37,6 +37,11 @@ ui <- shinyUI(
       value = "validation"
     ),
     tabPanel(
+      span("Summary", title = "Summary of Scores"),
+      validation_ui("summary_module"),
+      value = "summary"
+    ),
+    tabPanel(
       "",
       value = "download",
       download_ui("download_module"),

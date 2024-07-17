@@ -12,6 +12,7 @@ library(smbinning)
 library(tidyr)
 library(car)
 library(plotly)
+library(DT)
 
 # Options -----------------------------------------------------------------
 

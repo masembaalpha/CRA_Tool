@@ -32,6 +32,11 @@ server <- shinyServer(function(input, output, session) {
   dw <- callModule(download_server, "download_module", bin$binning,
                    model$scorecard, validation$validation)
 
+  # Summary ----------------------------------------------------------------
+  summary <- callModule(summaryServer, "summary_module", model_data)
+  
+
+  
   # Others ------------------------------------------------------------------
   
   # Observe whenever tabs are changed
