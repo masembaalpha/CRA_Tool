@@ -2,8 +2,10 @@
 
 ui <- shinyUI(
   navbarPage(
-    "Credit Scorecard Builder",
+    "Dalberg Research Credit Scorecard Builder",
     theme = shinytheme("sandstone"),
+    tags$head(
+      tags$style(HTML(".navbar-default { background-color: maroon; }"))),
     id = "nav_top",
     tabPanel(
       span("Data", title = "Upload and manage data"),

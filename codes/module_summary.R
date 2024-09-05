@@ -7,6 +7,7 @@
 #' 
 #' @return Merged data frame containing both training and test data
 merge_data <- function(con) {
+  req(scorecard())
   scr <- scorecard()
   merged_data <- bind_rows(scr$traindata, scr$testdata)
   merged_data

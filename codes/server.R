@@ -33,7 +33,7 @@ server <- shinyServer(function(input, output, session) {
                    model$scorecard, validation$validation)
 
   # Summary ----------------------------------------------------------------
-  summary <- callModule(summaryServer, "summary_module", model_data)
+  # summary <- callModule(summary_server, "summary_module", model_data)
   
 
   

@@ -24,3 +24,4 @@ in the Sample tab.
 numeric or integer variables can be binned.
 
 
+
